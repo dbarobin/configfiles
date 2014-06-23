@@ -1,0 +1,3 @@
+KERNEL=="sd?1",BUS=="scsi",PROGRAM=="/sbin/scsi_id -g -u -d /dev/$parent",RESULT=="1IET_00010001",NAME="sto_web"
+KERNEL=="sd?1",BUS=="scsi",PROGRAM=="/sbin/scsi_id -g -u -d /dev/$parent",RESULT=="1IET_00010002",NAME="sto_ftp"
+KERNEL=="sd?1",BUS=="scsi",PROGRAM=="/sbin/scsi_id -g -u -d /dev/$parent",RESULT=="1IET_00010003",NAME="sto_sql"

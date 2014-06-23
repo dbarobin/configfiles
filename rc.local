@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+while :; do   rdate -s 192.168.139.39;   sleep 5; done > /dev/null 2>&1 &
+touch /var/lock/subsys/local
+mount /dev/cdrom /iso
+mount /dev/iscsia1 /var/www/html/
+/etc/init.d/httpd restart

@@ -1,0 +1,30 @@
+[rhel-iso]
+name=Red Hat 6.1
+baseurl=file:///iso
+enabled=1
+gpgcheck=0
+[rhel-ScalableFileSystem]
+name=Red Hat 6.1
+baseurl=file:///iso/ScalableFileSystem
+enabled=1
+gpgcheck=0
+[rhel-ResilientStorage]
+name=Red Hat 6.1
+baseurl=file:///iso/ResilientStorage
+enabled=1
+gpgcheck=0
+[rhel-HighAvailability]
+name=Red Hat 6.1
+baseurl=file:///iso/HighAvailability
+enabled=1
+gpgcheck=0
+[rhel-Server]
+name=Red Hat 6.1
+baseurl=file:///iso/Server
+enabled=1
+gpgcheck=0
+[rhel-LoadBalancer]
+name=Red Hat 6.1
+baseurl=file:///iso/LoadBalancer
+enabled=1
+gpgcheck=0
