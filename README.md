@@ -1,4 +1,4 @@
-# configfiles-By Robin Wen #
+# Config files-By Robin Wen #
 
 ## Project Summary ##
 
