@@ -10,10 +10,10 @@
 ## Change Log ##
 
 2014-06-11
-> Documentation version is **1.0**, Documentation name is **Tools-By Robin Wen**, Comment is **All of Scripts pass-test**, By Robin。
+> Documentation version is **1.0**, Documentation name is **Config files-By Robin Wen**, Comment is **All of Scripts pass-test**, By Robin。
 
 2014-11-17
-> Documentation version is **2.0**, Documentation name is **Tools-By Robin Wen**, Comment is **All of Scripts pass-test**, By Robin。
+> Documentation version is **2.0**, Documentation name is **Config files-By Robin Wen**, Comment is **All of Scripts pass-test, and add the summary of scripts**, By Robin。
 
 ## Lists of File ##
 
