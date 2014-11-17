@@ -30,10 +30,10 @@
 ### cluster.conf [ha] ###
 > Cluster conf through ocfs2. Use this script in RHEL 6.1.
 
-### local_iso.repo [shell] ###
+### local_iso.repo [yum] ###
 > Use local rhel iso to config local yum source. Use this script in RHEL 6.1.
 
-### rc.local  [shell] ###
+### rc.local  [config] ###
 > Local linux config file. Define ntp, mount dir and restart httpd. Use this script in RHEL 6.1.
 
 Enjoy!
