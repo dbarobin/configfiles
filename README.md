@@ -21,6 +21,18 @@
 * cluster.conf [ha]
 * local_iso.repo [yum]
 * rc.local [config]
+* nginx [d]
+	* api.dbarobin.conf [conf] 
+	* default.conf [conf]
+	* default.conf.bak [conf]
+	* example_ssl.conf.bak [conf]
+	* nginx.conf [conf]
+	* pma.conf [conf]
+	* pma.dbarobin.conf [conf]
+	* puma.conf [conf]
+	* redmine.conf [conf]
+	* webvirtmgr.conf [conf]
+	* dbarobin.conf [conf]
 
 ## Scripts and Dirs Summary ##
 
@@ -35,6 +47,42 @@
 
 ### rc.local  [config] ###
 > Local linux config file. Define ntp, mount dir and restart httpd. Use this script in RHEL 6.1.
+
+### nginx [d] ###
+> Nginx config file. Use this script in RHEL 6.5 and Ubuntu 12.04.
+
+#### api.dbarobin.conf ####
+> Api configuration file of dbarobin.com.
+
+#### default.conf [conf] ####
+> Nginx default configuration file. Nginx installed via apt-get.
+
+#### default.conf.bak [conf] ####
+> Backup of nginx default configuration file. Nginx installed via apt-get.
+
+#### example_ssl.conf.bak [conf] ####
+> Nginx example ssl configuration file. Nginx installed via apt-get.
+
+#### nginx.conf [conf] ####
+> Nginx default configuration file. Nginx installed via source.
+
+#### pma.conf [conf] ####
+> Pma configuration file.
+
+#### pma.dbarobin.conf [conf] ####
+> Pma configuration file of dbarobin.com.
+
+#### puma.conf [conf] ####
+> Puma configuration file.
+
+#### redmine.conf [conf] ####
+> Redmine configuration file.
+
+#### webvirtmgr.conf [conf] ####
+> Webvirtmgr configuration file.
+
+#### dbarobin.conf [conf] ####
+> The website of dbarobin.com configuration file.
 
 Enjoy!
 
