@@ -36,6 +36,7 @@
 	* redmine.conf [conf]
 	* webvirtmgr.conf [conf]
 	* dbarobin.conf [conf]
+* locale.gen [config]
 
 ## Scripts and Dirs Summary ##
 
@@ -86,6 +87,9 @@
 
 #### dbarobin.conf [conf] ####
 > The website of dbarobin.com configuration file.
+
+### locale.gen [config] ###
+> Generate locales use this config file. This config file exists in Debian 7.6. When updated this file, use 'locale-gen' command to re-generate locales.
 
 Enjoy!
 
