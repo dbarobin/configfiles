@@ -18,6 +18,9 @@
 2014-11-18
 > Documentation version is **2.1**, Documentation name is **Config files-By Robin Wen**, Comment is **Add the nginx configuration file, and add the desc of this file**, By Robin。
 
+2014-11-20
+> Documentation version is **2.2**, Documentation name is **Config files-By Robin Wen**, Comment is **Add the locale configuration file, and add the desc of this file**, By Robin。
+
 ## Lists of File ##
 
 * 90-disk.rules [net]
