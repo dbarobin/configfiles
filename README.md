@@ -9,16 +9,16 @@
 
 ## Change Log ##
 
-2014-06-11
+**22014-06-11**
 > Documentation version is **1.0**, Documentation name is **Config files-By Robin Wen**, Comment is **All of Scripts pass-test**, By Robin。
 
-2014-11-17
+**2014-11-17**
 > Documentation version is **2.0**, Documentation name is **Config files-By Robin Wen**, Comment is **All of Scripts pass-test, and add the summary of scripts**, By Robin。
 
-2014-11-18
+**2014-11-18**
 > Documentation version is **2.1**, Documentation name is **Config files-By Robin Wen**, Comment is **Add the nginx configuration file, and add the desc of this file**, By Robin。
 
-2014-11-20
+**2014-11-20**
 > Documentation version is **2.2**, Documentation name is **Config files-By Robin Wen**, Comment is **Add the locale configuration file, and add the desc of this file**, By Robin。
 
 ## Lists of File ##
