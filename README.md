@@ -21,6 +21,9 @@
 **2014-11-20**
 > Documentation version is **2.2**, Documentation name is **Config files-By Robin Wen**, Comment is **Add the locale configuration file, and add the desc of this file**, By Robin。
 
+**2014-11-24**
+> Documentation version is **2.3**, Documentation name is **Config files-By Robin Wen**, Comment is **Add MySQL configuration file**, By Robin。
+
 ## Lists of File ##
 
 * 90-disk.rules [net]
@@ -40,6 +43,9 @@
 	* webvirtmgr.conf [conf]
 	* dbarobin.conf [conf]
 * locale.gen [config]
+* my_5.1.cnf [config]
+* my_mac_os_x.cnf [config]
+* my_multi.cnf [config]
 
 ## Scripts and Dirs Summary ##
 
@@ -93,6 +99,15 @@
 
 ### locale.gen [config] ###
 > Generate locales use this config file. This config file exists in Debian 7.6. When updated this file, use 'locale-gen' command to re-generate locales.
+
+### my_5.1.cnf [config] ###
+> MySQL 5.1 configuration file on linux.
+
+### my_mac_os_x.cnf [config] ###
+> MySQL 5.6 configration file on Mac OS X.
+
+### my_multi.cnf [config] ###
+> Multiple MySQL configuration file.
 
 Enjoy!
 
