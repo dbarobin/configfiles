@@ -24,6 +24,9 @@
 **2014-11-24**
 > Documentation version is **2.3**, Documentation name is **Config files-By Robin Wen**, Comment is **Add MySQL configuration file**, By Robin。
 
+**2014-12-12**
+> Documentation version is **2.4**, Documentation name is **Config files-By Robin Wen**, Comment is **Add Tomcat configuration file, server.xml**, By Robin。
+
 ## Lists of File ##
 
 * 90-disk.rules [net]
@@ -46,6 +49,7 @@
 * my_5.1.cnf [config]
 * my_mac_os_x.cnf [config]
 * my_multi.cnf [config]
+* tomcat_server.xml [xml]
 
 ## Scripts and Dirs Summary ##
 
@@ -108,6 +112,9 @@
 
 ### my_multi.cnf [config] ###
 > Multiple MySQL configuration file.
+
+### tomcat_server.xml [xml] ###
+> Tomcat server.xml. Resolve the "Tomcat : tomcat Connection refused" error.
 
 Enjoy!
 
