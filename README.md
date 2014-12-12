@@ -27,6 +27,9 @@
 **2014-12-12**
 > Documentation version is **2.4**, Documentation name is **Config files-By Robin Wen**, Comment is **Add Tomcat configuration file, server.xml**, By Robin。
 
+**2014-12-12**
+> Documentation version is **2.5**, Documentation name is **Config files-By Robin Wen**, Comment is **Add mongodb configuration file.**, By Robin。
+
 ## Lists of File ##
 
 * 90-disk.rules [net]
@@ -50,6 +53,7 @@
 * my_mac_os_x.cnf [config]
 * my_multi.cnf [config]
 * tomcat_server.xml [xml]
+* mongod.conf [config]
 
 ## Scripts and Dirs Summary ##
 
@@ -115,6 +119,9 @@
 
 ### tomcat_server.xml [xml] ###
 > Tomcat server.xml. Resolve the "Tomcat : tomcat Connection refused" error.
+
+### mongod.conf [config] ###
+> MongoDB configuration file.
 
 Enjoy!
 
