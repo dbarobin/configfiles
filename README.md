@@ -30,8 +30,13 @@
 **2014-12-12**
 > Documentation version is **2.5**, Documentation name is **Config files-By Robin Wen**, Comment is **Add mongodb configuration file.**, By Robin。
 
+**2011-01-13**
+> Documentation version is **2.5.1**, Documentation name is **Config files-By Robin Wen**, Comment is **Add config file of sublime, bash profile, vimrc, config file of ssh, etc**, By Robin。
+
 ## Lists of File ##
 
+* .bash_profile
+* .vimrc
 * 90-disk.rules [net]
 * cluster.conf [ha]
 * local_iso.repo [yum]
@@ -48,7 +53,14 @@
 	* redmine.conf [conf]
 	* webvirtmgr.conf [conf]
 	* dbarobin.conf [conf]
+* sublime-text-3 [d]
+	*  Default-OSX.sublime-keymap [conf]
+	*  MarkdownPreview.sublime-settings [conf]
+	*  Package Control.sublime-settings [conf]
+	*  Preferences.sublime-settings [conf]
+	*  sublime_text_3_packages [file]
 * locale.gen [config]
+* ssh_config [config]
 * my_5.1.cnf [config]
 * my_mac_os_x.cnf [config]
 * my_multi.cnf [config]
@@ -56,6 +68,12 @@
 * mongod.conf [config]
 
 ## Scripts and Dirs Summary ##
+
+### .bash_profile ###
+> Custom bash file. Use this configuration file in Mac OSX 10.9.5
+
+### .vimrc ###
+> Vim  configuration file. Use this configuration file in Mac OSX 10.9.5. Use vgod's vimrc. Fork this on on GITHUB  https://github.com/vgod/vimrc
 
 ### 90-disk.rules [net] ###
 > Storage binding via iscsi. Use this script in RHEL 6.1.
@@ -105,8 +123,29 @@
 #### dbarobin.conf [conf] ####
 > The website of dbarobin.com configuration file.
 
+### sublime-text-3 [d] ###
+> Configuration file directory of Sublime Text 3.
+
+#### Default-OSX.sublime-keymap [conf] ####
+> Key binding file of Sublime Text 3.
+
+####  MarkdownPreview.sublime-settings [conf] ####
+> MarkdownPreview custom settins of Sublime Text 3.
+
+#### Package Control.sublime-settings [conf] ####
+> Custom package control settings of Sublime Text 3.
+
+#### Preferences.sublime-settings [conf] ####
+> Custom preferences of Sublime Text 3.
+
+#### sublime_text_3_packages [file] ####
+> Custom plugins of  Sublime Text 3.
+
 ### locale.gen [config] ###
 > Generate locales use this config file. This config file exists in Debian 7.6. When updated this file, use 'locale-gen' command to re-generate locales.
+
+### ssh_config [config] ###
+>  SSH configuration file. Use this in  Mac OSX 10.9.5.
 
 ### my_5.1.cnf [config] ###
 > MySQL 5.1 configuration file on linux.
@@ -131,5 +170,5 @@ Enjoy!
 
 * Robin Wen
 * Gmail：dbarobinwen@gmail.com
-* CSDN：http://blog.csdn.net/justdb
+* Blog：http://dbarobin.com
 * GitHub：https://github.com/dbarobin
