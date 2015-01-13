@@ -24,7 +24,8 @@ set ts=4        " Set table space
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
-set paste       " set paste
+set paste       " Set paste
+set number      " Set line number
 
 
 filetype off          " necessary to make ftdetect work on Linux
