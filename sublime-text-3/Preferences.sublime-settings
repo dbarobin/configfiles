@@ -1,0 +1,28 @@
+{
+   "bold_folder_labels": true,
+   "color_scheme": "Packages/Colorcoder/Solarized (Light) (SL) (Colorcoded).tmTheme",
+   "font_face": "Ubuntu Mono",
+   "font_options": "subpixel_antialias",
+   "font_size": 12,
+   "highlight_line": true,
+   "highlight_modified_tabs": true,
+   "ignored_packages":
+   [
+      "Markdown"
+   ],
+   "line_padding_bottom": 1,
+   "line_padding_top": 1,
+   "original_color_scheme": "Packages/User/SublimeLinter/Solarized (Light) (SL).tmTheme",
+   "rulers":
+   [
+      100
+   ],
+   "scroll_past_end": true,
+   "show_encoding": true,
+   "tab_completion": false,
+   "tab_size": 4,
+   "translate_tabs_to_spaces": true,
+   "trim_trailing_white_space_on_save": true,
+   "word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
+   "word_wrap": true
+}

@@ -20,10 +20,11 @@ call pathogen#helptags()
 
 set nocompatible	" not compatible with the old-fashion vi mode
 set bs=2		" allow backspacing over everything in insert mode
-set ts=4
+set ts=4        " Set table space 
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
+set paste       " set paste
 
 
 filetype off          " necessary to make ftdetect work on Linux
