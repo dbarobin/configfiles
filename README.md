@@ -33,6 +33,9 @@
 **2011-01-13**
 > Documentation version is **2.5.1**, Documentation name is **Config files-By Robin Wen**, Comment is **Add config file of sublime, bash profile, vimrc, config file of ssh, etc**, By Robin。
 
+**2011-01-14**
+> Documentation version is **2.5.2**, Documentation name is **Config files-By Robin Wen**, Comment is **Add multiple mysql osx configuration file**, By Robin。
+
 ## Lists of File ##
 
 * .bash_profile
@@ -64,6 +67,7 @@
 * my_5.1.cnf [config]
 * my_mac_os_x.cnf [config]
 * my_multi.cnf [config]
+* my_multi_mysql_osx.cnf [config]
 * tomcat_server.xml [xml]
 * mongod.conf [config]
 
@@ -155,6 +159,9 @@
 
 ### my_multi.cnf [config] ###
 > Multiple MySQL configuration file.
+
+### my_multi_mysql_osx.cnf [config] ###
+> Multiple MySQL configuration file. Update at 11:39:27 2015/01/14.
 
 ### tomcat_server.xml [xml] ###
 > Tomcat server.xml. Resolve the "Tomcat : tomcat Connection refused" error.

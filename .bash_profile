@@ -31,6 +31,7 @@ export LC_ALL=en_US.UTF-8
 #   ------------------------------------------------------------
     export PATH="$PATH:/usr/local/bin/"
     export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+    export PATH="/usr/local/mysql/mysql-5.1.73-osx10.6-x86_64/bin:$PATH"
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
@@ -79,7 +80,7 @@ mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and ju
 trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
 ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
 alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
-stty -echoctl                               # Remove the ^C when Press Crtl+C
+stty -echoctl
 
 #   lr:  Full Recursive Directory Listing
 #   ------------------------------------------
@@ -299,3 +300,31 @@ httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grab
 #   e.g.: hdiutil create -size 10m 10MB.dmg
 #   the above create files that are almost all zeros - if random bytes are desired
 #   then use: ~/Dev/Perl/randBytes 1048576 > 10MB.dat
+
+#   ---------------------------------------
+#   10.  MySQL alias command configuration
+#   ---------------------------------------
+
+#   Start MySQL 5.1
+#   ---------------------------------------
+alias sta-5.1='sudo mysqld_multi start 5173 && sleep 2 && ps -ef | grep mysql'
+
+#   Stop MySQL 5.1
+#   ---------------------------------------
+alias sto-5.1='sudo mysqld_multi stop 5173 && sleep 3 && ps -ef | grep mysql'
+
+#   Start MySQL 5.5
+#   ---------------------------------------
+alias sta-5.5='sudo mysqld_multi start 5540 && sleep 2 && ps -ef | grep mysql'
+
+#   Stop MySQL 5.5
+#   ---------------------------------------
+alias sto-5.5='sudo mysqld_multi stop 5540 && sleep 3 && ps -ef | grep mysql'
+
+#   Start MySQL 5.6
+#   ---------------------------------------
+alias sta-5.6='sudo mysqld_multi start 5612 && sleep 2 && ps -ef | grep mysql'
+
+#   Stop MySQL 5.6
+#   ---------------------------------------
+alias sto-5.6='sudo mysqld_multi stop 5612 && sleep 3 && ps -ef | grep mysql'
