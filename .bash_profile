@@ -15,6 +15,7 @@ export LC_ALL=en_US.UTF-8
 #  7.   System Operations & Information
 #  8.   Web Development
 #  9.   Reminders & Notes
+#  10.  MySQL alias command configuration
 #
 #  ---------------------------------------------------------------------------
 
@@ -48,6 +49,8 @@ export LC_ALL=en_US.UTF-8
 #   ------------------------------------------------------------
 #   export CLICOLOR=1
 #   export LSCOLORS=ExFxBxDxCxegedabagacad
+   export CLICOLOR=1
+   export LSCOLORS=GxFxCxDxBxegedabagaced
 
 
 #   -----------------------------
