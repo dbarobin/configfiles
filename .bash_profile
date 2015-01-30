@@ -315,7 +315,7 @@ alias sta-5.1='sudo mysqld_multi start 5173 && sleep 2 && ps -ef | grep mysql'
 #   Stop MySQL 5.1
 #   ---------------------------------------
 # alias sto-5.1='sudo mysqld_multi stop 5173 && sleep 3 && ps -ef | grep mysql'
-alias sto-5.1='ps -ef | grep mysql_5173 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9'
+alias sto-5.1="ps -ef | grep mysql_5173 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9"
 
 #   Start MySQL 5.5
 #   ---------------------------------------
@@ -324,7 +324,7 @@ alias sta-5.5='sudo mysqld_multi start 5540 && sleep 2 && ps -ef | grep mysql'
 #   Stop MySQL 5.5
 #   ---------------------------------------
 # alias sto-5.5='sudo mysqld_multi stop 5540 && sleep 3 && ps -ef | grep mysql'
-alias sto-5.5='ps -ef | grep mysql_5540 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9'
+alias sto-5.5="ps -ef | grep mysql_5540 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9"
 
 #   Start MySQL 5.6
 #   ---------------------------------------
@@ -333,4 +333,4 @@ alias sta-5.6='sudo mysqld_multi start 5612 && sleep 2 && ps -ef | grep mysql'
 #   Stop MySQL 5.6
 #   ---------------------------------------
 # alias sto-5.6='sudo mysqld_multi stop 5612 && sleep 3 && ps -ef | grep mysql'
-alias sto-5.6='ps -ef | grep mysql_5612 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9'
+alias sto-5.6="ps -ef | grep mysql_5612 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9"
