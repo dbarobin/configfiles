@@ -52,6 +52,8 @@ export LC_ALL=en_US.UTF-8
    export CLICOLOR=1
    export LSCOLORS=GxFxCxDxBxegedabagaced
 
+#  Set Magic space
+bind Space:magic-space
 
 #   -----------------------------
 #   2.  MAKE TERMINAL BETTER
