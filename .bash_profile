@@ -102,7 +102,6 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 #   ------------------------------------------------------------
     showa () { /usr/bin/grep --color=always -i -a1 $@ ~/Library/init/bash/aliases.bash | grep -v '^\s*$' | less -FSRXc ; }
 
-
 #   -------------------------------
 #   3.  FILE AND FOLDER MANAGEMENT
 #   -------------------------------
@@ -154,7 +153,6 @@ EOT
          fi
     }
 
-
 #   ---------------------------
 #   4.  SEARCHING
 #   ---------------------------
@@ -167,7 +165,6 @@ ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name end
 #   spotlight: Search for a file using MacOS Spotlight's metadata
 #   -----------------------------------------------------------
     spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
-
 
 #   ---------------------------
 #   5.  PROCESS MANAGEMENT
@@ -205,7 +202,6 @@ ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name end
 #   ------------------------------------------------------------
     my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 
-
 #   ---------------------------
 #   6.  NETWORKING
 #   ---------------------------
@@ -234,7 +230,6 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
         #echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
         echo
     }
-
 
 #   ---------------------------------------
 #   7.  SYSTEMS OPERATIONS & INFORMATION
@@ -274,7 +269,6 @@ httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grab
 #   httpDebug:  Download a web page and show info on what took time
 #   -------------------------------------------------------------------
     httpDebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
-
 
 #   ---------------------------------------
 #   9.  REMINDERS & NOTES
@@ -336,3 +330,23 @@ alias sta-5.6='sudo mysqld_multi start 5612 && sleep 2 && ps -ef | grep mysql'
 #   ---------------------------------------
 # alias sto-5.6='sudo mysqld_multi stop 5612 && sleep 3 && ps -ef | grep mysql'
 alias sto-5.6="ps -ef | grep mysql_5612 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9"
+
+#   ---------------------------------------
+#   11. RVM Settings
+#   ---------------------------------------
+
+#   Export path of rvm
+#   ---------------------------------------
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+#   Export path of rvm
+#   ---------------------------------------
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#   Use ruby of 1.9.3
+#   ---------------------------------------
+rvm use 1.9.3 2>/dev/null >/dev/null
+
+#   Use custom gemset
+#   ---------------------------------------
+rvm gemset use robin 2>/dev/null >/dev/null
