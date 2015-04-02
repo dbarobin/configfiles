@@ -1,0 +1,29 @@
+# Bash profile for production env.
+# Ref: http://t.cn/RAt8ed6
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+alias rm='rm -i –'
+alias cp='cp -i –'
+alias mv='mv -i –'
+
+echo " "
+echo " "
+
+echo "[31;1m**************************TODAY:`date`****************************[0m"
+echo "[31;1m***You  login as "$USER", Please ask somebody to  double check!***[0m"
+echo "[31;1m****************************************************************[0m"
+
+echo " "
+echo " "
+
+export PS1='$LOGNAME@`hostname`:$PWD>'
+PATH=$PATH:$HOME/bin:/usr/local/mysql/bin
+export PATH
+
+unset USERNAME
