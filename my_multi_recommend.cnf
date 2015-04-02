@@ -1,0 +1,213 @@
+[mysqld_multi]
+mysqld = /usr/bin/mysqld_safe
+mysqladmin = /usr/bin/mysqladmin
+user = admin
+log = /data/multi.log
+
+[client]
+default-character-set = utf8
+
+[mysqld3306]
+user = mysql
+port = 3306
+socket = /data/mysqldata3306/sock/mysql.sock
+pid-file = /data/mysqldata3306/sock/mysql.pid
+datadir = /data/mysqldata3306/mydata
+tmpdir = /data/mysqldata3306/tmpdir
+big_tables
+skip_external_locking
+skip-locking
+skip-name-resolve
+lower_case_table_names = 1
+back_log = 100
+default-storage-engine = INNODB
+default-character-set = utf8
+collation = utf8_general_ci
+max_connections = 800
+max_connect_errors = 100000
+interactive_timeout = 172800
+connect_timeout = 10
+max_allowed_packet = 4M
+max_heap_table_size = 128M
+tmp_table_size = 128M
+max_length_for_sort_data = 4096
+net_buffer_length = 8K
+sort_buffer_size = 8M
+join_buffer_size = 1M
+read_buffer_size = 1M
+read_rnd_buffer_size = 2M
+table_cache = 1024
+thread_cache_size = 64
+thread_concurrency = 8
+query_cache_type = 0
+#query_cache_size = 64M
+query_cache_limit = 1M
+
+#*******************************  Logs related settings ***************************
+log-error = /data/mysqldata3306/log/error.log
+log_warnings
+long_query_time = 1
+slow_query_log
+slow_query_log_file = /data/mysqldata3306/log/slow-query.log
+#log_slow_queries = /data/mysqldata3306/log/slow-query.log
+log_queries_not_using_indexes
+binlog_cache_size = 8M
+max_binlog_size = 512M
+log_long_format
+log-bin = /data/mysqldata3306/binlog/mysql-bin3306
+log-bin-index = /data/mysqldata3306/binlog/mysql-bin3306.index
+expire_logs_days = 3
+
+#*******************************  Replication related settings **********************
+#master
+server-id = 3306
+bind-address = 10.10.1.157
+report_host = 10.10.1.157
+report_port = 3306
+report_user = repl
+slave_net_timeout = 60
+innodb_flush_log_at_trx_commit = 2
+sync_binlog = 0
+binlog-format = mixed
+transaction_isolation = REPEATABLE-READ
+
+#******************************* MyISAM Specific options ****************************
+key_buffer_size = 32M
+bulk_insert_buffer_size = 16M
+myisam_sort_buffer_size = 64M
+myisam_max_sort_file_size = 10G
+myisam_max_extra_sort_file_size = 10G
+myisam_repair_threads = 1
+myisam_recover
+
+#***************************** INNODB Specific options ******************************
+innodb_file_per_table
+innodb_autoinc_lock_mode = 1
+innodb_fast_shutdown = 2
+innodb_additional_mem_pool_size = 64M
+innodb_buffer_pool_size = 1G
+innodb_data_home_dir = /data/mysqldata3306/innodb_ts
+innodb_data_file_path = ibdata1:256M:autoextend
+innodb_file_io_threads = 4
+innodb_thread_concurrency = 0
+innodb_log_buffer_size = 8M
+innodb_log_file_size = 256M
+innodb_log_files_in_group = 10
+innodb_log_group_home_dir = /data/mysqldata3306/innodb_log
+innodb_max_dirty_pages_pct = 20
+innodb_lock_wait_timeout = 120
+innodb_flush_method=O_DIRECT
+
+[mysqld3307]
+user = mysql
+port = 3307
+socket = /data/mysqldata3307/sock/mysql.sock
+pid-file = /data/mysqldata3307/sock/mysql.pid
+datadir = /data/mysqldata3307/mydata
+tmpdir = /data/mysqldata3307/tmpdir
+big_tables
+skip_external_locking
+skip-locking
+skip-name-resolve
+lower_case_table_names = 1
+back_log = 100
+default-storage-engine = INNODB
+default-character-set = utf8
+collation = utf8_general_ci
+max_connections = 800
+max_connect_errors = 100000
+interactive_timeout = 172800
+connect_timeout = 10
+max_allowed_packet = 4M
+max_heap_table_size = 128M
+tmp_table_size = 128M
+max_length_for_sort_data = 4096
+net_buffer_length = 8K
+sort_buffer_size = 8M
+join_buffer_size = 1M
+read_buffer_size = 1M
+read_rnd_buffer_size = 2M
+table_cache = 1024
+thread_cache_size = 64
+thread_concurrency = 8
+query_cache_type = 0
+#query_cache_size = 64M
+query_cache_limit = 1M
+
+#*******************************  Logs related settings ***************************
+log-error = /data/mysqldata3307/log/error.log
+log_warnings
+long_query_time = 1
+slow_query_log
+slow_query_log_file = /data/mysqldata3307/log/slow-query.log
+#log_slow_queries = /data/mysqldata3307/log/slow-query.log
+log_queries_not_using_indexes
+binlog_cache_size = 8M
+max_binlog_size = 512M
+log_long_format
+log-bin = /data/mysqldata3307/binlog/mysql-bin3307
+log-bin-index = /data/mysqldata3307/binlog/mysql-bin3307.index
+expire_logs_days = 3
+
+#*******************************  Replication related settings **********************
+#master
+server-id = 3307
+bind-address = 10.10.1.157
+report_host = 10.10.1.157
+report_port = 3307
+report_user = repl
+slave_net_timeout = 60
+innodb_flush_log_at_trx_commit = 2
+sync_binlog = 0
+binlog-format = mixed
+transaction_isolation = REPEATABLE-READ
+
+#******************************* MyISAM Specific options ****************************
+key_buffer_size = 32M
+bulk_insert_buffer_size = 16M
+myisam_sort_buffer_size = 64M
+myisam_max_sort_file_size = 10G
+myisam_max_extra_sort_file_size = 10G
+myisam_repair_threads = 1
+myisam_recover
+
+#***************************** INNODB Specific options ******************************
+innodb_file_per_table
+innodb_autoinc_lock_mode = 1
+innodb_fast_shutdown = 2
+innodb_additional_mem_pool_size = 64M
+innodb_buffer_pool_size = 5G
+innodb_data_home_dir = /data/mysqldata3307/innodb_ts
+innodb_data_file_path = ibdata1:256M:autoextend
+innodb_file_io_threads = 4
+innodb_thread_concurrency = 0
+innodb_log_buffer_size = 8M
+innodb_log_file_size = 256M
+innodb_log_files_in_group = 10
+innodb_log_group_home_dir = /data/mysqldata3307/innodb_log
+innodb_max_dirty_pages_pct = 20
+innodb_lock_wait_timeout = 120
+innodb_flush_method=O_DIRECT
+
+[mysql]
+no-auto-rehash
+prompt=”\u@\h : \d \r:\m:\s>”
+#tee=”/tmp/query.log”
+#pager=”less -i -n -S”
+max_allowed_packet = 1G
+
+[mysqldump]
+quick
+max_allowed_packet = 1G
+
+[mysqld_safe]
+open-files-limit = 8192
+
+[myisamchk]
+key_buffer = 512M
+sort_buffer_size = 128M
+read_buffer = 8M
+write_buffer = 8M
+
+[mysqlhotcopy]
+interactive-timeout
