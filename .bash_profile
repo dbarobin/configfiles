@@ -1,5 +1,7 @@
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+#export LC_CTYPE=C 
+#export LANG=C
 
 #  ---------------------------------------------------------------------------
 #
@@ -350,3 +352,15 @@ rvm use 1.9.3 2>/dev/null >/dev/null
 #   Use custom gemset
 #   ---------------------------------------
 rvm gemset use robin 2>/dev/null >/dev/null
+
+#   ---------------------------------------
+#   12. Fortune Settings
+#   ---------------------------------------
+# Easter egg of quote of the day via fortune, Ref: http://t.cn/RAK7M7y
+echo
+echo "=============== Quote Of The Day ==============="
+echo
+fortune
+echo
+echo "================================================"
+echo
