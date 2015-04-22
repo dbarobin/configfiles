@@ -333,6 +333,10 @@ alias sta-5.6='sudo mysqld_multi start 5612 && sleep 2 && ps -ef | grep mysql'
 # alias sto-5.6='sudo mysqld_multi stop 5612 && sleep 3 && ps -ef | grep mysql'
 alias sto-5.6="ps -ef | grep mysql_5612 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9"
 
+#   Start MySQL 5.1,5.5,5.6
+#   ---------------------------------------
+alias sta-all-mysql="sta-5.1 && sta-5.5 && sta-5.6"
+
 #   ---------------------------------------
 #   11. RVM Settings
 #   ---------------------------------------
