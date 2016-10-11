@@ -1,6 +1,6 @@
 # Config files
 
-Config files about linux and service on it. This scripts collected via work. You may get massive useful skills through the script.
+Config files by Robin. This scripts collected via learning and work. You may get massive useful skills through the script.
 
 ## Version
 
