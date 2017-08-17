@@ -5,4 +5,4 @@
 
 git add -A .
 git commit -m "$1"
-fuckgfw git push origin master
+proxychains4 git push origin master
