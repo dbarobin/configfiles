@@ -5,4 +5,4 @@
 
 git add -A .
 git commit -m "$1"
-git push origin master
+fuckgfw git push origin master
