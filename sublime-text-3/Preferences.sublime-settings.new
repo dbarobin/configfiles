@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Colorcoder/Solarized (Light) (Colorcoded) (SL) (Colorcoded).tmTheme",
+	"color_scheme": "Packages/Colorcoder/Solarized (light) (Colorcoded).tmTheme",
 	"enable_live_count": true,
 	"font_face": "Ubuntu Mono",
 	"font_options": "subpixel_antialias",
@@ -9,13 +9,12 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"EncodingHelper",
 		"Markdown",
 		"Vintage"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"original_color_scheme": "Packages/User/SublimeLinter/Solarized (Light) (Colorcoded) (SL).tmTheme",
+	"original_color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
 	"rulers":
 	[
 		80
@@ -24,10 +23,11 @@
 	"show_encoding": true,
 	"tab_completion": false,
 	"tab_size": 4,
-	"theme": "Default.sublime-theme",
+	"theme": "Sodarized Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
 	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": true
 }
+
